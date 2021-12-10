@@ -116,7 +116,7 @@
 }
 
 .devider::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -162,3 +162,244 @@
 .resend-mail {
   display: inline-block;
 }
+
+
+/* 共通 */
+.alert {
+  color: #dd4b39;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.input-box {
+  height: 36px;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  color: #545658;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  outline: none;
+}
+
+.input-box::placeholder{
+  font-size: 13px;
+}
+
+.input-box:focus {
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
+}
+
+.label-text {
+  display: block;
+  color: #545658;
+  font-size: 12px;
+}
+
+/* 共通 */
+
+
+/* 名前 */
+.name-area {
+  display: flex;
+}
+
+.half-box {
+  width: 50%;
+  margin-left: 16px;
+}
+
+.half-box:first-child {
+  margin-left: 0;
+}
+/* 名前 */
+
+
+/* 性別 */
+.gender-box {
+  display: flex;
+  margin-top: 5px;
+}
+
+.gender-list {
+  margin-left: 15px;
+  color: #545658;
+}
+
+.gender-list:first-child {
+  margin-left: 0;
+}
+
+.radio-input {
+  appearance: none;
+}
+
+.gender-item {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.gender-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.radio-input:checked + .gender-item::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #01bfbd;
+}
+/* 性別 */
+
+
+/* 出身 */
+.input-box {
+  -webkit-appearance: none;
+}
+
+.hometown-box {
+  margin-left: 0;
+  position: relative;
+}
+
+.hometown-box::after {
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.select-area {
+  margin-top: 8px;
+  font-size: 13px;
+}
+/* 出身 */
+
+
+/* 希望コース */
+.course-box {
+  margin-top: 10px;
+}
+
+.course-box:nth-of-type(1) {
+  margin-top: 5px;
+}
+
+.check-box {
+  display: none;
+}
+
+.check-box-text {
+position: relative;
+padding-left: 25px;
+color: #545658;
+}
+
+.check-box-text:after, .check-box-text:before{
+position: absolute;
+content: "";
+display: block;
+}
+
+.check-box-text:after {
+left: 0;
+top: 50%;
+width: 15px;
+height: 15px;
+margin-top: -8px;
+border: 1px solid #d9d9d9;
+}
+
+.check-box-text:before {
+left: 6px;
+top: 50%;
+width: 8px;
+height: 16px;
+margin-top: -12px;
+border-right: 3px solid #01bfbd;
+border-bottom: 3px solid #01bfbd;
+transform: rotate(45deg);
+opacity: 0;
+z-index: 3;
+}
+
+.check-box:checked + .check-box-text:before {
+opacity: 1;
+}
+/* 希望コース */
+
+
+
+/* 備考 */
+.textarea-box {
+  height: 100px;
+  resize: none;
+  line-height: 2;
+}
+/* 備考 */
+
+
+
+/* アカウント作成ボタン */
+.submit-btn {
+  width: 100%;
+  padding: 13px;
+  font-size: 13px;
+  color: #fff;
+  background-color: #01bfbd;
+  border: 1px solid #01bfbd;
+  border-radius: 3px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #01a6a4;
+}
+
+.submit-btn:active {
+  background-color: #fff;
+  color: #01a6a4;
+  border-color: #d9d9d9;
+}
+/* アカウント作成ボタン */
+
+
+/* 利用規約 */
+.foot-part {
+  cursor: pointer;
+}
+
+.link-color:hover {
+  color: #01bfbd;
+}
+/* 利用規約 */
+
+
